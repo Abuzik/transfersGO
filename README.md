@@ -9,10 +9,10 @@
   ```
   - Ответ в случае удачного трансфера: 
   ```json
-  {"answer": <blockchain answer>, "errors": false}
+  {"errors": false, "answer": <blockchain answer>}
   ```
   - Ответ в случае ошибки трансфера: 
   ```json
-  {"answer": "error", "errors": true, "reason": <blockchain answer>}
+  {"errors": true, "answer": "error", "reason": <blockchain answer>}
   ```
   - Блокировка внешних запросов, кроме запросов непосредственно внутри сервера или ip в white-листе (CORS)
